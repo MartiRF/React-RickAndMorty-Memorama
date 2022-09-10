@@ -1,0 +1,13 @@
+.board{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    gap: 2rem;
+    background-color: #444;
+     */
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 800px;
+    margin:auto;
+    border: 1px solid orange;
+}
