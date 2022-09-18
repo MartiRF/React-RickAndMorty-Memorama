@@ -4,8 +4,40 @@
     box-sizing: border-box;
 }
 .container{
+    border-bottom: 2px solid #444;
+
     border: 1px solid black;
     max-width: 1600px;
-    min-width: auto;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
+}
+.header{
+    border-bottom: 2px solid #444;
+
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__buttons_item{
+    border: 1px solid #444;
+    padding: 8px;
+    margin-left: 10px;
+}
+/* Minimo de footer 90px */
+.footer__by{
+    text-align: center;
+    align-self: center;
+}
+footer{
+    border-top: 2px solid #444;
+    min-height: 75px;
+    justify-content: center;
+    align-items: center;
 }

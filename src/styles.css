@@ -1,0 +1,10 @@
+/* Estilos mas generales  */
+.flex-blox-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center-flex-box{
+    display: flex;
+    justify-content: center;
+}

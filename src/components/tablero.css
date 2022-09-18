@@ -1,13 +1,11 @@
-.board{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    gap: 2rem;
-    background-color: #444;
-     */
+.tablero{
+    height: 650px;
+    max-height: 900px;
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 12px;
     grid-template-columns: repeat(4,1fr);
-    max-width: 800px;
+    max-width: 850px;
+    width: 800px;
     margin:auto;
-    border: 1px solid orange;
+    border: 1px solid blue;
 }
