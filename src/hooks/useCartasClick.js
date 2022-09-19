@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useCounter } from './useCounter'
 
-export const useCartasClick = ( baraja, setBarajaPrime ) => {
+export const useCartasClick = ( baraja, setBarajaPrime, puntajeIncrement ) => {
 
   const { counter, increment } = useCounter();
 
@@ -16,14 +16,15 @@ export const useCartasClick = ( baraja, setBarajaPrime ) => {
     let barajaCopy = [...baraja]
     barajaCopy[index] = cartaFlipped
     setBarajaPrime(barajaCopy)
-
+    
     if(cartaActualSelecionada === null){
       setCartaActualSelecionada(carta)
+      puntajeIncrement()
+      
     }
 
     else if(carta.name === cartaActualSelecionada.name){
       setCartaActualSelecionada(null)
-      increment()
     }
 
     else{

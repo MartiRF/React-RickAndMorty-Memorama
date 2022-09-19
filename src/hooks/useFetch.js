@@ -48,5 +48,6 @@ export const useFetch = () => {
     baraja:barajaPrime,
     isLoading,
     setBarajaPrime,
+    getData,
   }
 }

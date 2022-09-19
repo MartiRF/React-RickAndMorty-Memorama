@@ -2,16 +2,13 @@ import { useCartasClick } from '../hooks/useCartasClick'
 import { Carta } from './Cartas/Carta'
 import './tablero.css'
 
-export const Tablero = ({ baraja, setBarajaPrime, puntaje }) => {
+export const Tablero = ({ baraja, setBarajaPrime, puntajeIncrement }) => {
 
-  const { onClick, animating, counter } = useCartasClick(baraja,setBarajaPrime)
+  const { onClick, animating  } = useCartasClick(baraja,setBarajaPrime, puntajeIncrement)
 
-  const clickPuntaje = () => {
-    // console.log(counter)
-    puntaje(counter)
-  }
+
   return (
-    <section className='tablero' onClick={() => clickPuntaje()}>
+    <section className='tablero' >
         {
             baraja?.map((item,index) => (
 
