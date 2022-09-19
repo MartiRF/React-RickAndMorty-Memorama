@@ -1,3 +1,14 @@
+/* 
+    Negro Intenso:#1f2632 
+    Negro Claro:#323a49
+    Texto Claro:#cee3e9
+    Texto Intenso:#52ffa8,#52ffa8
+*/
+body{
+    background-color:#22261F;
+}
+
+
 /* Estilos mas generales  */
 .flex-blox-column{
     display: flex;
@@ -7,4 +18,5 @@
 .center-flex-box{
     display: flex;
     justify-content: center;
+    gap: 17px;
 }

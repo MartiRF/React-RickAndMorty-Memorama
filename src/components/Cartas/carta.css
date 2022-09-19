@@ -1,18 +1,23 @@
 .carta{
-    min-width: 190.5px;
-    min-height: 190.5px;
+    max-width: 160.5px;
+    max-height: 160.5px;
     cursor: pointer;
     aspect-ratio: 1/1;
 }
 
 .carta-front,.carta-back {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     position: absolute;
     backface-visibility: hidden;
+    border-radius: 21px;
+
 }
 .carta-flipped{
     transform: rotateY(180deg);
+    box-shadow: 5px 5px 10px 0px #60E700;
+    border-radius: 21px;
+
 }
 .carta-hidden{
     position: relative;
@@ -25,7 +30,7 @@
 .carta-back{
     background: #ef626c;
     transform: rotateY(180deg);
-    box-shadow: 5px 5px 10px 0px rgb(0 0 0 /50%);
+    /* box-shadow: 5px 5px 10px 0px #60E700; */
 }
 .carta-back{
     position: relative;
@@ -36,7 +41,8 @@
     background: slategray;
     height: 100%;
     width: 100%;
-    box-shadow: 5px 5px 10px 0px rgb(0 0 0 /50%);
+    box-shadow: 5px 5px 10px 0px #59BD13;
+    background: #59BD13;
 }
 
 /* Carta */
@@ -52,8 +58,12 @@
     font-size: 20px;
     color: azure;
     background: #444;
+    border-bottom-left-radius: 21px;
+    border-bottom-right-radius: 21px;
+
 }
 .carta-back-img{
+    border-radius: 21px;
     background: gray;
     display: block;
     width:100%;

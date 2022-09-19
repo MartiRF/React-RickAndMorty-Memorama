@@ -1,11 +1,11 @@
 .tablero{
-    height: 650px;
+    height: 570px;
     max-height: 900px;
     display: grid;
     grid-gap: 12px;
     grid-template-columns: repeat(4,1fr);
     max-width: 850px;
-    width: 800px;
-    margin:auto;
-    border: 1px solid blue;
+    width: 757px;
+    margin: 40px auto 0;
+    
 }
