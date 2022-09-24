@@ -11,7 +11,12 @@ export const useFetch = () => {
       // Rick and Morty API
       const resp = await fetch(`https://rickandmortyapi.com/api/character/?page=${Math.floor(Math.random() * 20)}`)
       const { results } = await resp.json();
-      const cartas = await results.slice(0,6)
+      
+      //EL results tiene 20, solo neceito 6,
+      // TODO: hacer que sea aletorio al selecionar 6 elementos
+      const rangoInicial = Math.floor(Math.random() * 14)
+
+      const cartas = await results.slice(rangoInicial,rangoInicial + 6)
       const newCartas = cartas.map(item => {
         const { name, id, image } = item;
         return {

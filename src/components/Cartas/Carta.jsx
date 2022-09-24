@@ -9,6 +9,7 @@ export const Carta = ({ onClick, carta, index, animating }) => {
             <div className='carta-front'>
 
             </div>
+
             <div className='carta-back'>
               {/* <div className='containerCartaFront'> */}
                 <img className='carta-back-img' src={image} alt={name}/>

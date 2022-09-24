@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { Header } from './components/views/Header';
 import { Footer } from './components/views/Footer';
 import { useCounter } from './hooks/useCounter';
+import { Loading } from './components/Loading/Loading';
 
 function App() {
   const { counter, increment, reset} = useCounter()
@@ -18,7 +19,11 @@ function App() {
     <>
       <div className="container">
         <Header puntaje={counter} handlerButtonReiniciar={getData} onPuntajeReset={reset} />
-        <Tablero baraja={baraja} setBarajaPrime={setBarajaPrime} puntajeIncrement={increment} />
+        {
+        isLoading 
+        ?  <Loading /> 
+        : <Tablero baraja={baraja} setBarajaPrime={setBarajaPrime} puntajeIncrement={increment} />
+        }
       </div>
       <Footer/>
     </>

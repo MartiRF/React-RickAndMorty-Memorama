@@ -10,6 +10,7 @@ export const useCartasClick = ( baraja, setBarajaPrime, puntajeIncrement ) => {
   const [animating, setAnimating] = useState(false)
   const [cartaActualSelecionada, setCartaActualSelecionada] = useState(null)
 
+  // Manejo de click al tocar una carta
   const onClick = ( carta ) => {
     const { index } = carta
     const cartaFlipped = {...carta,flipped:true}

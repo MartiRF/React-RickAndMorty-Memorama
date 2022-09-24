@@ -1,0 +1,20 @@
+.loading{
+    border-radius: 25px;
+    align-items: center;
+    color: #22261F;
+    background-color: #455D33;
+    display: flex;
+    height: 570px;
+    justify-content: center;
+    margin: 40px auto 0;
+    max-height: 900px;
+    max-width: 850px;
+    width: 757px;
+    box-shadow: 1px -2px 138px 10px rgb(96, 231, 0, 0.62);
+    -webkit-box-shadow: 1px -2px 138px 10px rgb(96, 231, 0, 0.62);
+    -moz-box-shadow: 1px -2px 138px 10px rgb(96, 231, 0, 0.62);
+}
+
+.loading__titulo{
+
+}
