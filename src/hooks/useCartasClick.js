@@ -5,7 +5,7 @@ export const useCartasClick = ( baraja, setBarajaPrime, puntajeIncrement ) => {
 
   const { counter, increment } = useCounter();
 
-  // console.log(counter)
+
 
   const [animating, setAnimating] = useState(false)
   const [cartaActualSelecionada, setCartaActualSelecionada] = useState(null)

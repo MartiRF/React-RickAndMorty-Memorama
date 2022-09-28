@@ -3,7 +3,6 @@ import { Tablero } from './components/Tablero';
 import { useFetch } from './hooks/useFetch';
 import './App.css'
 import './styles.css'
-import { useState } from 'react';
 
 import { Header } from './components/views/Header';
 import { Footer } from './components/views/Footer';
