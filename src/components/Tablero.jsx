@@ -1,23 +1,21 @@
-import { useCartasClick } from '../hooks/useCartasClick'
+import { useContext } from 'react'
+import { MemoContex } from '../context/MemoContext'
 import { Carta } from './Cartas/Carta'
 import './tablero.css'
 
-export const Tablero = ({ baraja, setBarajaPrime, puntajeIncrement }) => {
+export const Tablero = () => {
 
-  const { onClick, animating  } = useCartasClick(baraja,setBarajaPrime, puntajeIncrement)
-
+  const {fetch} = useContext(MemoContex)
 
   return (
     <section className='tablero' >
         {
-            baraja?.map((item,index) => (
+            fetch.baraja.map((item,index) => (
 
                 <Carta 
                     key={index}
-                    carta={item}
-                    onClick={onClick}
+                    cartaMain={item}
                     index={index}
-                    animating={animating}
                     />
             ))
         }

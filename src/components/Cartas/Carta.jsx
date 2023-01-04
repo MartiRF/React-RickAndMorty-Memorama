@@ -1,11 +1,14 @@
 import React from 'react'
+import { useContext } from 'react'
+import { MemoContex } from '../../context/MemoContext'
 import './carta.css'
-export const Carta = ({ onClick, carta, index, animating }) => {
-
-  const { image, name, flipped } = carta
+export const Carta = ({ cartaMain, index,}) => {
+  
+  const {cartaClick} = useContext(MemoContex)
+  const { image, name, flipped } = cartaMain
   
   return (
-    <div className={`carta carta-hidden ${flipped && 'carta-flipped'}`} onClick={() => ((!flipped && !animating) && onClick( carta={...carta, index}) )}>
+    <div className={`carta carta-hidden ${flipped && 'carta-flipped'}`} onClick={() => ((!flipped && !cartaClick.animating) && cartaClick.onClick( cartaMain={...cartaMain, index}) )}>
             <div className='carta-front'>
 
             </div>

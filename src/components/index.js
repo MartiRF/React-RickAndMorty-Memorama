@@ -1,0 +1,5 @@
+export * from './Cartas/Carta.jsx'
+export * from './Loading/Loading.jsx'
+export * from './Over/Over.jsx'
+export * from './views/'
+export * from './Tablero'
