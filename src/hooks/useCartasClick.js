@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import { useCounter } from './useCounter'
 
-export const useCartasClick = ( baraja, setBarajaPrime, puntajeIncrement ) => {
+export const useCartasClick = ( baraja = [], setBarajaPrime, puntajeIncrement ) => {
 
   const { counter, increment } = useCounter();
 
 
-
+  if(baraja.filter(carta => carta.flipped ).length >= 12){
+    console.log('Ganaste')
+  }
   const [animating, setAnimating] = useState(false)
   const [cartaActualSelecionada, setCartaActualSelecionada] = useState(null)
 
   // Manejo de click al tocar una carta
   const onClick = ( carta ) => {
-    console.log(carta)
+    
     const { index } = carta
     const cartaFlipped = {...carta,flipped:true}
     let barajaCopy = [...baraja]
