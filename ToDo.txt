@@ -1,0 +1,7 @@
+TODO:
++Arreglar el bug de que carta no concuerda con la imagen selecionada pero aun asi la marca correcta por el nombe
+-Agregar layout de que terminaste la partida
+-Agregar boton para poder cambiar el tamanno del tablero
+-Mejorar la UI 
+
+

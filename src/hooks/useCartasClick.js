@@ -12,6 +12,7 @@ export const useCartasClick = ( baraja, setBarajaPrime, puntajeIncrement ) => {
 
   // Manejo de click al tocar una carta
   const onClick = ( carta ) => {
+    console.log(carta)
     const { index } = carta
     const cartaFlipped = {...carta,flipped:true}
     let barajaCopy = [...baraja]
@@ -24,7 +25,7 @@ export const useCartasClick = ( baraja, setBarajaPrime, puntajeIncrement ) => {
       
     }
 
-    else if(carta.name === cartaActualSelecionada.name){
+    else if(carta.id === cartaActualSelecionada.id){
       setCartaActualSelecionada(null)
     }
 
