@@ -1,6 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
+import { MemoContex } from '../../context/MemoContext'
 
 export const Header = ({ puntaje, handlerButtonReiniciar, onPuntajeReset }) => {
+  
+    const {hola} = useContext(MemoContex);
+    console.log(hola)
+
     const reiniciar = () => {
         handlerButtonReiniciar()
         onPuntajeReset()
