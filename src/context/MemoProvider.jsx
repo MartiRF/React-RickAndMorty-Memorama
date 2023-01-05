@@ -7,6 +7,8 @@ import { useFetchRickAndMorty } from '../hooks/useFetchRickAndMorty'
 import { MemoContex } from './MemoContext'
 
 export const MemoProvider = ({ children }) => {
+  const [isMenuConfigOpen, setIsMenuConfigOpen] = useState(false)
+
   const [ganaste, setGanaste] = useState(false)
   const fetch = useFetchRickAndMorty();
   const counter = useCounter()
@@ -28,7 +30,9 @@ export const MemoProvider = ({ children }) => {
   const stateGame = {
     isWin,
     ganaste,
-    setGanaste
+    setGanaste,
+    isMenuConfigOpen,
+    setIsMenuConfigOpen
   }
   return (
     <MemoContex.Provider value={{fetch,counter,cartaClick,stateGame}}>

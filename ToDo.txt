@@ -1,7 +1,17 @@
+TODO 2:
+?Usar tailwind para los nuevos componentes(ModalWin, MenuConfig)
+-Agregar funcionalidad a los botones del modal WinModal
+    -Nueva partida BTN,
+    -Reiniciar BTN,
+-Agregar funcionalidad a los botones de configuracion
+    -Elaborar una funcion que modifique el tamaño del tablero
+    -BTN aplicar cambios
+        -Cargar el nuevo tablero con la configuracion data
+    -BTN Cancelar
 TODO:
 +Arreglar el bug de que carta no concuerda con la imagen selecionada pero aun asi la marca correcta por el nombe
--Agregar layout de que terminaste la partida
--Agregar boton para poder cambiar el tamanno del tablero
--Mejorar la UI 
++Agregar layout de que terminaste la partida
++Agregar boton para poder configurar(tablero,etc)
+-Mejorar la UI
 
 

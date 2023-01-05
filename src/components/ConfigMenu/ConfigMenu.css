@@ -1,0 +1,7 @@
+.container__configuracion{
+    background-color: white;
+    width: 35%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+}
