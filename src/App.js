@@ -1,15 +1,13 @@
-import { useContext } from 'react';
+import { useContext, useMemo } from 'react';
 
-import { Header, Footer, Loading, Tablero } from './components/';
+import { Header, Footer, Loading, Tablero, WinModal } from './components/';
 import { MemoContex } from './context/MemoContext';
 import './App.css'
 import './styles.css'
- 
-  
+
+
 function App() {
-
-  const {fetch} = useContext(MemoContex)
-
+  
   return (
     <>
       <div className="container">
@@ -21,6 +19,7 @@ function App() {
         }
       </div>
       <Footer/>
+      <WinModal />
     </>
   );
 }

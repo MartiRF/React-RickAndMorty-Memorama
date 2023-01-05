@@ -1,16 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { MemoContex } from '../context/MemoContext';
 import { useCounter } from './useCounter'
 
 export const useCartasClick = ( baraja = [], setBarajaPrime, puntajeIncrement ) => {
 
   const { counter, increment } = useCounter();
-
-
-  if(baraja.filter(carta => carta.flipped ).length >= 12){
-    console.log('Ganaste')
-  }
   const [animating, setAnimating] = useState(false)
   const [cartaActualSelecionada, setCartaActualSelecionada] = useState(null)
+  const [win, setWin] = useState(false)
 
   // Manejo de click al tocar una carta
   const onClick = ( carta ) => {
@@ -24,7 +21,6 @@ export const useCartasClick = ( baraja = [], setBarajaPrime, puntajeIncrement ) 
     if(cartaActualSelecionada === null){
       setCartaActualSelecionada(carta)
       puntajeIncrement()
-      
     }
 
     else if(carta.id === cartaActualSelecionada.id){
