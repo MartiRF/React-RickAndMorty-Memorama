@@ -23,7 +23,7 @@ export const useFetchRickAndMorty = () => {
           name,
           id,
           image,
-          flipped:true,
+          flipped:false,
         }
       })
       const baraja = [...newCartas,...newCartas]
