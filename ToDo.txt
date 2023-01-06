@@ -1,3 +1,6 @@
+TODO 3:
+-Agregar cronometro
+-Agregar cronometro a la modal de win
 TODO 2:
 ?Usar tailwind para los nuevos componentes(ModalWin, MenuConfig)
 -Agregar funcionalidad a los botones del modal WinModal

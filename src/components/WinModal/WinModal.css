@@ -3,7 +3,6 @@
 }
 
 .ReactModalPortal .ReactModal__Overlay {
-    border-radius: 1px solid white;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -29,12 +28,47 @@
 }
 
 .modal {
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 5px;
     color: rgb(51, 51, 51);
-    display: inline;
+    min-width: 400px;
+    min-height: 260px;
     max-height: 620px;
     max-width: 500px;
     outline: none;
     padding: 10px;
+    justify-content: space-around;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 10px 0px ;
+    box-shadow: 0px 0px 19px 1px #59bd13;
+}
+.win__container{
+    /* min-height: 400px; */
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px;
+}
+@media screen and (max-width:640px){
+    .modal{
+        min-width: 200px;
+        max-width: 300px;
+        min-height: 300px;
+        max-height: 300px;
+    }
+    .btn__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .win__container h1{
+        font-size: 2.5rem
+    }
 }

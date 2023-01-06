@@ -20,10 +20,10 @@ Modal.setAppElement('#root');
 
 
 export const WinModal = () => {
-  const {stateGame} = useContext(MemoContex)
-  // const [isOpen, setIsOpen] = useState()
+
+  const {stateGame, counter} = useContext(MemoContex)
+
   const onCloseModal = () => {
-    // setIsOpen(false)
     stateGame.setGanaste(false)
   }
 
@@ -31,15 +31,20 @@ export const WinModal = () => {
     <Modal 
       isOpen={stateGame.ganaste}
       onRequestClose={onCloseModal}
-      style={customStyles}
-    
-      // className='modal'
+      // style={customStyles}
+      // className='win__container'
+      className='modal header'
       overlayClassName='modal-fondo'
       closeTimeoutMS={200}
     >
-      <h1>Ganaste Bro</h1>
-      <button>Nueva partida</button>
-      <button>Configuracion</button>
+      <div className='win__container'>
+        <h1 className='header__titulo'>Ganaste</h1>
+        <h2 className='header__movimientos'>Puntaje: <span>{counter.counter}</span></h2>
+        <div className='btn__container'>
+          <button className='header__buttons_item'>Nueva partida</button>
+          <button className='header__buttons_item'>Configuracion</button>
+        </div>
+      </div>
     </Modal>
   )
 }
