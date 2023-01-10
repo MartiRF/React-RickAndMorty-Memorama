@@ -29,7 +29,7 @@ export const WinModal = () => {
         <h1 className='header__titulo'>Ganaste</h1>
         <h2 className='header__movimientos'>Puntaje: <span>{counter.counter}</span></h2>
         <div className='btn__container'>
-          <Boton>Nueva Partida</Boton>
+          <Boton handlerClick={stateGame.newGame}>Nueva Partida</Boton>
           <Boton>Configuracion</Boton>
         </div>
       </div>

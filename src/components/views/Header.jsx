@@ -6,20 +6,17 @@ import { Boton } from '../Boton/Boton'
 
 export const Header = () => {
     
-  const { counter, fetch, stateGame } = useContext(MemoContex)
+  const { counter, stateGame } = useContext(MemoContex)
 
   const onOpenMenu = () => {
     stateGame.setIsMenuConfigOpen(true)
   }
-    const reiniciar = () => {
-        fetch.getData()
-        counter.reset()
-    }
+
   return (
     <header className='header'>
         <div className='btn__container'>
           <Boton handlerClick={onOpenMenu}><ConfigIco /></Boton>
-          <Boton handlerClick={reiniciar}>Reiniciar</Boton>
+          <Boton handlerClick={stateGame.newGame}>Reiniciar</Boton>
         </div>
         <h1 className='header__titulo'>Memorama Rick and Morty</h1>
         <h2 className='header__movimientos'> Movimientos: <span>{counter.counter}</span></h2>
