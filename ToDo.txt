@@ -5,9 +5,8 @@ TODO 3:
 -Tabla de ranking 
 -
 TODO2:
-?Usar tailwind para los nuevos componentes(ModalWin, MenuConfig)
--Mejorar un poco el codigo
--Crear un componente boton
++Mejorar un poco el codigo
++Crear un componente boton
 -Agregar funcionalidad a los botones del modal WinModal
     -Nueva partida BTN,
     -Reiniciar BTN,
