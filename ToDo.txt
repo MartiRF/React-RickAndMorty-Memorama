@@ -1,6 +1,9 @@
 TODO 3:
 -Agregar cronometro
 -Agregar cronometro a la modal de win
+-Agregar sonido
+-Tabla de ranking 
+-
 TODO 2:
 ?Usar tailwind para los nuevos componentes(ModalWin, MenuConfig)
 -Agregar funcionalidad a los botones del modal WinModal
@@ -15,6 +18,6 @@ TODO:
 +Arreglar el bug de que carta no concuerda con la imagen selecionada pero aun asi la marca correcta por el nombe
 +Agregar layout de que terminaste la partida
 +Agregar boton para poder configurar(tablero,etc)
--Mejorar la UI
++Mejorar la UI
 
 

@@ -1,7 +1,42 @@
 .container__configuracion{
-    background-color: white;
+    /* background-color:#22261F; */
+    background-color: hsl(100, 2%, 33%, 94%);
     width: 35%;
     height: 100%;
     z-index: 1;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+    padding: 30px;
+}
+.container__configuracion h1,h3{
+    color: #60E700;
+
+}
+.container__configuracion button{
+    box-shadow: 0px 0px 19px 1px #59bd13;
+}
+.size__tableros{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.opciones__tableros{
+    display: flex;
+    gap: 19px;
+    justify-content: center;
+}
+.opciones__tableros p{
+    text-align: center;
+    padding: 25px;
+}
+@media screen and (max-width:640px){
+    .container__configuracion{
+        width: 100%;
+    }
 }

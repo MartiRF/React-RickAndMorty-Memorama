@@ -16,16 +16,18 @@ export const ConfigMenu = () => {
   return (
     <div className='container__configuracion'>
       <h1>Configuracion</h1>
-      <div>
+      <div className='size__tableros'>
         <h3>Tamaño del tablero</h3>
-        <div>
-          <p>4x3</p>
-          <p>8x6</p>
-          <p>16x12</p>
+        <div className='opciones__tableros'>
+          <p className='header__buttons_item'>4x3</p>
+          <p className='header__buttons_item'>8x6</p>
+          <p className='header__buttons_item'>16x12</p>
         </div>
       </div>
-      <button onClick={onAplicarConfiguracion}>Aplicar</button>
-      <button onClick={onCancelarConfiguracion}>Cancelar</button>
+      <div className='opciones__tableros'>
+        <button className='header__buttons_item' onClick={onAplicarConfiguracion}>Aplicar</button>
+        <button className='header__buttons_item' onClick={onCancelarConfiguracion}>Cancelar</button>
+      </div>
     </div>
   )
 }
