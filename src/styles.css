@@ -5,11 +5,80 @@
     Texto Intenso:#52ffa8,#52ffa8
 */
 body{
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 24px;
+    /* 
     font-family: 'Montserrat', sans-serif;
+     */
     background-color:#22261F;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background-color: #1E181D;
+    color: #BE00AE;
+    font-size: 20px
+}   
+a{
+    text-decoration: none;
+    color:#BE00AE;
+}
+a:link{
+    text-decoration: none;
+    color:#BE00AE;
+}
+a:visited{
+    text-decoration: none;
+    color:#e400d1;
+}
+a:hover{
+    text-decoration: underline;
+    color:#e400d1;
 
+}
+.container{
+    max-width: 1600px;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Minimo de footer 90px */
+.footer__by{
+    text-align: center;
+    align-self: center;
+}
+footer{
+    border-top: 2px solid #444;
+    min-height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+/* Header STYLE */
+.header{
+    background-color:#455D33;
+    margin: 0 auto;
+    height: 70px;
+}
+.header__titulo{
+    color: #59BD13;
+    font-size: 50px;
+}
+.header__movimientos{
+    color: #22261F;
+}
+.header__movimientos span{
+    color: #60E700;
+}
 /* Estilos mas generales  */
 .flex-blox-column{
     display: flex;

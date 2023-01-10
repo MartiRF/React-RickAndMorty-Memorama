@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { useState } from 'react';
 import Modal from 'react-modal'
 import { MemoContex } from '../../context/MemoContext';
+import { Boton } from '../Boton/Boton';
 import './WinModal.css'
 
 const customStyles = {
@@ -41,8 +42,8 @@ export const WinModal = () => {
         <h1 className='header__titulo'>Ganaste</h1>
         <h2 className='header__movimientos'>Puntaje: <span>{counter.counter}</span></h2>
         <div className='btn__container'>
-          <button className='header__buttons_item'>Nueva partida</button>
-          <button className='header__buttons_item'>Configuracion</button>
+          <Boton>Nueva Partida</Boton>
+          <Boton>Configuracion</Boton>
         </div>
       </div>
     </Modal>

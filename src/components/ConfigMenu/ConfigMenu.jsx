@@ -1,6 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { MemoContex } from '../../context/MemoContext'
+import { Boton } from '../Boton/Boton'
 import './ConfigMenu.css'
 export const ConfigMenu = () => {
 
@@ -19,14 +20,14 @@ export const ConfigMenu = () => {
       <div className='size__tableros'>
         <h3>Tamaño del tablero</h3>
         <div className='opciones__tableros'>
-          <p className='header__buttons_item'>4x3</p>
-          <p className='header__buttons_item'>8x6</p>
-          <p className='header__buttons_item'>16x12</p>
+          <Boton>4x3</Boton>
+          <Boton>8x6</Boton>
+          <Boton>16x12</Boton>
         </div>
       </div>
       <div className='opciones__tableros'>
-        <button className='header__buttons_item' onClick={onAplicarConfiguracion}>Aplicar</button>
-        <button className='header__buttons_item' onClick={onCancelarConfiguracion}>Cancelar</button>
+        <Boton handlerClick={onAplicarConfiguracion}>Aplicar</Boton>
+        <Boton handlerClick={onCancelarConfiguracion}>Cancelar</Boton>
       </div>
     </div>
   )

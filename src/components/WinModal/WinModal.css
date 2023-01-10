@@ -54,6 +54,12 @@
     justify-content: space-around;
     gap: 35px;
 }
+.btn__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 @media screen and (max-width:640px){
     .modal{
         min-width: 200px;

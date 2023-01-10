@@ -1,0 +1,25 @@
+.btn__component{
+    /* border:none; */
+    align-items: center;
+    background-color: #22261F;
+    border-radius: 7px;
+    color: #60E700;
+    cursor: pointer;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: center;
+    margin-left: 10px;
+    max-height: 50px;
+    min-height: 20px;
+    padding: 13px;
+}
+.btn__component:hover{
+    background-color: #60E700;
+    color: #22261F;
+}
+.btn__conatiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,9 +1,8 @@
 import React from 'react'
-import { useState } from 'react'
 import { useContext } from 'react'
 import { ConfigIco } from '../../assets/icos/ConfigIco'
 import { MemoContex } from '../../context/MemoContext'
-import { ConfigMenu } from '../ConfigMenu/ConfigMenu'
+import { Boton } from '../Boton/Boton'
 
 export const Header = () => {
     
@@ -18,9 +17,9 @@ export const Header = () => {
     }
   return (
     <header className='header'>
-          <div className='header__buttons'>
-          <p className='header__buttons_item' onClick={onOpenMenu}><ConfigIco /></p>
-          <p className='header__buttons_item' onClick={reiniciar}>Reiniciar</p>
+        <div className='btn__container'>
+          <Boton handlerClick={onOpenMenu}><ConfigIco /></Boton>
+          <Boton handlerClick={reiniciar}>Reiniciar</Boton>
         </div>
         <h1 className='header__titulo'>Memorama Rick and Morty</h1>
         <h2 className='header__movimientos'> Movimientos: <span>{counter.counter}</span></h2>

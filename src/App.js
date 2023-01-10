@@ -1,13 +1,12 @@
-import { useContext, useMemo } from 'react';
+import { useContext } from 'react';
 
 import { Header, Footer, Loading, Tablero, WinModal, ConfigMenu } from './components/';
 import { MemoContex } from './context/MemoContext';
-import './App.css'
 import './styles.css'
 
 
 function App() {
-  
+
   const {stateGame} = useContext(MemoContex)
 
   return (
