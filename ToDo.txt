@@ -7,9 +7,9 @@ TODO 3:
 TODO2:
 +Mejorar un poco el codigo
 +Crear un componente boton
--Agregar funcionalidad a los botones del modal WinModal
++Agregar funcionalidad a los botones del modal WinModal
     +Nueva partida BTN,
-    -Configuracion BTN,
+    +Configuracion BTN,
 -Agregar funcionalidad a los botones de configuracion
     -Elaborar una funcion que modifique el tamaño del tablero
     -BTN aplicar cambios

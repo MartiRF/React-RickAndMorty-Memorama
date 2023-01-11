@@ -8,11 +8,11 @@ import './styles.css'
 function App() {
 
   const {stateGame} = useContext(MemoContex)
-
+  
   return (
     <>
       <div className="container">
-        {stateGame.isMenuConfigOpen ? <ConfigMenu/> : null}
+        {stateGame.setting.isMenuConfigOpen ? <ConfigMenu/> : null}
         <Header/>
         {
           fetch.isLoading 

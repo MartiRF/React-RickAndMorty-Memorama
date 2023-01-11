@@ -8,14 +8,14 @@ export const Header = () => {
     
   const { counter, stateGame } = useContext(MemoContex)
 
-  const onOpenMenu = () => {
-    stateGame.setIsMenuConfigOpen(true)
+  const onOpenMenuConfig = () => {
+    stateGame.setting.setIsMenuConfigOpen(true)
   }
 
   return (
     <header className='header'>
         <div className='btn__container'>
-          <Boton handlerClick={onOpenMenu}><ConfigIco /></Boton>
+          <Boton handlerClick={onOpenMenuConfig}><ConfigIco /></Boton>
           <Boton handlerClick={stateGame.newGame}>Reiniciar</Boton>
         </div>
         <h1 className='header__titulo'>Memorama Rick and Morty</h1>

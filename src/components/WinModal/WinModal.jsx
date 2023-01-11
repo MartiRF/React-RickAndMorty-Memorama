@@ -16,7 +16,10 @@ export const WinModal = () => {
   const onCloseModal = () => {
     stateGame.setIsWin(false)
   }
-
+  const onConfig = () => {
+    stateGame.setIsWin(false)
+    stateGame.setting.setIsMenuConfigOpen(true)
+  }
   return (
     <Modal 
       isOpen={stateGame.isWin}
@@ -30,7 +33,7 @@ export const WinModal = () => {
         <h2 className='header__movimientos'>Puntaje: <span>{counter.counter}</span></h2>
         <div className='btn__container'>
           <Boton handlerClick={stateGame.newGame}>Nueva Partida</Boton>
-          <Boton>Configuracion</Boton>
+          <Boton handlerClick={onConfig}>Configuracion</Boton>
         </div>
       </div>
     </Modal>
