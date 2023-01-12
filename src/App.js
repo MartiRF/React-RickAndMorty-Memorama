@@ -7,7 +7,7 @@ import './styles.css'
 
 function App() {
 
-  const {stateGame} = useContext(MemoContex)
+  const {stateGame, fetch} = useContext(MemoContex)
   
   return (
     <>
