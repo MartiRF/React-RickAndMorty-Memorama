@@ -8,9 +8,8 @@ export const Carta = ({ cartaMain, index,}) => {
   const { image, name, flipped } = cartaMain
   
   return (
-    <div className={`carta carta-hidden ${flipped && 'carta-flipped'}`} onClick={() => ((!flipped && !cartaClick.animating) && cartaClick.onClick( cartaMain={...cartaMain, index}) )}>
+    <div className={`carta__container carta-hidden ${flipped && 'carta-flipped'}`} onClick={() => ((!flipped && !cartaClick.animating) && cartaClick.onClick( cartaMain={...cartaMain, index}) )}>
             <div className='carta-front'>
-
             </div>
 
             <div className='carta-back'>

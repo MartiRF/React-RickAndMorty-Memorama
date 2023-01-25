@@ -39,4 +39,7 @@
     .container__configuracion{
         width: 100%;
     }
+    .opciones__tableros{
+        flex-direction: column;
+    }
 }

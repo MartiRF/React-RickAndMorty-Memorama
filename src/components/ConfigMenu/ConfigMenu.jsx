@@ -28,9 +28,9 @@ export const ConfigMenu = () => {
       <div className='size__tableros'>
         <h3>Tamaño del tablero</h3>
         <div className='opciones__tableros'>
-          <Boton handlerClick={() => onChangeSizeBoard(2)}>FACIL</Boton>
+          <Boton handlerClick={() => onChangeSizeBoard(3)}>FACIL</Boton>
           <Boton handlerClick={() => onChangeSizeBoard(6)}>Normal</Boton>
-          <Boton handlerClick={() => onChangeSizeBoard(10)}>Dificil</Boton>
+          <Boton handlerClick={() => onChangeSizeBoard(12)}>Dificil</Boton>
         </div>
       </div>
       {/* <div className='opciones__tableros'>

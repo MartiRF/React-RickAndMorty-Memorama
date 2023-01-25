@@ -20,7 +20,7 @@ function App() {
           : <Tablero />
         }
       </div>
-      <Footer/>
+      {/* <Footer/> */}
       <WinModal />
     </>
   );

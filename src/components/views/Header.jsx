@@ -14,7 +14,7 @@ export const Header = () => {
 
   return (
     <header className='header'>
-        <div className='btn__container'>
+        <div className='btn__container__header'>
           <Boton handlerClick={onOpenMenuConfig}><ConfigIco /></Boton>
           <Boton handlerClick={stateGame.newGame}>Reiniciar</Boton>
         </div>

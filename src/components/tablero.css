@@ -1,11 +1,33 @@
 .tablero{
-    height: 570px;
-    max-height: 900px;
+    /* border: 1px white solid; */
+    padding: 1em;
+    width: 100%;
+    min-height: calc(100% - 4em);
+    max-height: 9000px;
+    /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    */
+    /* justify-content: space-evenly; */
     display: grid;
-    grid-gap: 12px;
-    grid-template-columns: repeat(4,1fr);
-    max-width: 850px;
-    width: 757px;
-    margin: 40px auto 0;
-    
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: repeat(6, 1fr); */
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    align-items: center;
+    justify-items: center;
+}
+@media screen and (max-width:640px){
+
+    .tablero{
+        height: calc(100% - 5rem);
+        /* width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        /* width: 757px; 
+        margin: 40px auto 0; */
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
