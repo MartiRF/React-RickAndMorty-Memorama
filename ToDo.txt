@@ -3,7 +3,6 @@ TODO 3:
 -Agregar cronometro a la modal de win
 -Agregar sonido
 -Tabla de ranking 
--
 TODO2:
 +Mejorar un poco el codigo
 +Crear un componente boton
@@ -11,7 +10,7 @@ TODO2:
     +Nueva partida BTN,
     +Configuracion BTN,
 -Agregar funcionalidad a los botones de configuracion
-    -Elaborar una funcion que modifique el tamaño del tablero
+    +Elaborar una funcion que modifique el tamaño del tablero
     -BTN aplicar cambios
         -Cargar el nuevo tablero con la configuracion data
     -BTN Cancelar
